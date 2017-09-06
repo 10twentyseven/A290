@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a290.kevin.assignment2.SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Name"
+            android:textSize="24sp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nums">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/plus"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="plusEventHandler"
+                    android:text="+"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/minus"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="minusEventHandler"
+                    android:text="-"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/divide"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="divideEventHandler"
+                    android:text="/"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/multiply"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="timesEventHandler"
+                    android:text="*"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/secondPower"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="secondPowerEventHandler"
+                    android:text="^2"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/halfPower"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="halfPowerEventHandler"
+                    android:text="^1/2"
+                    android:textSize="30sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/equals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tableLayout2"
+            android:onClick="equalsEventHandler"
+            android:text="="
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/nums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/email"
+            android:layout_marginTop="72dp"
+            android:ems="10"
+            android:inputType="number" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
