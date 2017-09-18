@@ -1,4 +1,4 @@
-package com.a290.kevin.assignment3music;
+package com.a290.kevin.assignment3_music;
 
 /**
  * Created by Kevin on 9/13/2017.
@@ -11,11 +11,11 @@ public class Artist {
     private int artistId;
 
     public Artist(String name, String description, String genre, int artistId) {
-            this.name = name;
-            this.description = description;
-            this.genre = genre;
-            this.artistId = artistId;
-        }
+        this.name = name;
+        this.description = description;
+        this.genre = genre;
+        this.artistId = artistId;
+    }
 
     public String getName() {
         return name;
