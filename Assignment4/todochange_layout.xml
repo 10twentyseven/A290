@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toDoInputView"
+        android:layout_width="379dp"
+        android:layout_height="182dp">
+
+        <TextView
+            android:id="@+id/titleMessage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="24dp"
+            android:text="To Do List Title:" />
+
+        <EditText
+            android:id="@+id/titleEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_alignBaseline="@+id/titleMessage2"
+            android:layout_alignBottom="@+id/titleMessage2"
+            android:layout_toEndOf="@+id/titleMessage2" />
+
+        <TextView
+            android:id="@+id/contentsMessage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Contents: "
+            android:layout_below="@+id/titleEdit"
+            android:layout_toStartOf="@+id/contentsEdit" />
+
+        <EditText
+            android:id="@+id/contentsEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_alignTop="@+id/contentsMessage2"
+            android:layout_alignStart="@+id/titleEdit" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="28dp"
+            android:layout_toEndOf="@+id/delete"
+            android:onClick="editsaveButtonHandler"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/contentsMessage2"
+            android:layout_marginStart="40dp"
+            android:onClick="deletebuttonhandler"
+            android:text="Delete" />
+    </RelativeLayout>
+</LinearLayout>
