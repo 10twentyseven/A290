@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uparrow"
+    tools:context="com.example.kevin.assignment5.MainActivity">
+
+    <ImageView
+        android:id="@+id/ball"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        app:srcCompat="@drawable/redball"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+</android.support.constraint.ConstraintLayout>
